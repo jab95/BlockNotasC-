@@ -199,11 +199,11 @@ namespace WindowsFormsApp1
             {
                 if (richTxt.SelectedText != null)
                 {
-                    richTxt.SelectionBackColor = fontDialog1.Color;
+                    richTxt.SelectionBackColor = colorDialog1.Color;
                 }
                 else
                 {
-                    richTxt.BackColor = fontDialog1.Color;
+                    richTxt.BackColor = colorDialog1.Color;
 
                 }
 
@@ -347,6 +347,7 @@ namespace WindowsFormsApp1
             if (textoCambiado == 1)
             {
 
+                richTxt.Clear();
                 richTxt.Text = paraVolverAEmpezar;
 
                 richTxt.SelectionBackColor = richTxt.BackColor;

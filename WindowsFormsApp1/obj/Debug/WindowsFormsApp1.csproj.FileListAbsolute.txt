@@ -36,3 +36,13 @@ C:\Users\AYALA\Desktop\2DAM\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1\W
 C:\Users\AYALA\Desktop\2DAM\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\AYALA\Desktop\2DAM\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\AYALA\Desktop\2DAM\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\AYALA\Desktop\BlockNotasC--master\BlockNotasC--master\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\AYALA\Desktop\BlockNotasC--master\BlockNotasC--master\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\AYALA\Desktop\BlockNotasC--master\BlockNotasC--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+C:\Users\AYALA\Desktop\BlockNotasC--master\BlockNotasC--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PanelAcerca.resources
+C:\Users\AYALA\Desktop\BlockNotasC--master\BlockNotasC--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\AYALA\Desktop\BlockNotasC--master\BlockNotasC--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\AYALA\Desktop\BlockNotasC--master\BlockNotasC--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+C:\Users\AYALA\Desktop\BlockNotasC--master\BlockNotasC--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\AYALA\Desktop\BlockNotasC--master\BlockNotasC--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\AYALA\Desktop\BlockNotasC--master\BlockNotasC--master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
