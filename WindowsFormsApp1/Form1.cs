@@ -18,10 +18,10 @@ namespace WindowsFormsApp1
         int contadorGuardados = 0;
         int columna = 0;
         int fila = 0;
-        int textoCambiado;
-        String paraVolverAEmpezar;
-        int contadorEncontrados=0;
 
+        String texto;
+        String paraVolverAEmpezar;
+        Boolean buscado = false;
 
 
         public Form1()
@@ -91,13 +91,15 @@ namespace WindowsFormsApp1
             {
                 if (MessageBox.Show("¿Desea guardar el documento antes?", "Guardar", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    var guardar = saveFile.ShowDialog();
-                    if (guardar == DialogResult.OK)
+                    System.IO.StreamWriter saveFile1 = null;
+
+
+                    if (saveFile.ShowDialog() == DialogResult.OK)
                     {
-                        using (var saveFile1 = new System.IO.StreamWriter(saveFile.FileName))
-                        {
-                            saveFile1.Write(richTxt.Text);
-                        }
+                        saveFile1 = new System.IO.StreamWriter(saveFile.FileName);
+                        saveFile1.WriteLine(richTxt.Text);
+                        saveFile1.Close();
+
                     }
                     contadorGuardados++;
                 }
@@ -199,14 +201,12 @@ namespace WindowsFormsApp1
             {
                 if (richTxt.SelectedText != null)
                 {
-                    richTxt.SelectionBackColor = colorDialog1.Color;
+                    richTxt.SelectionColor = colorDialog1.Color;
                 }
                 else
                 {
-                    richTxt.BackColor = colorDialog1.Color;
-
+                    richTxt.ForeColor = colorDialog1.Color;
                 }
-
             }
         }
 
@@ -215,22 +215,18 @@ namespace WindowsFormsApp1
         {
             var fuente = fontDialog1.ShowDialog();
 
-            
-
-                if (fuente == DialogResult.OK)
+            if (fuente == DialogResult.OK)
+            {
+                if (richTxt.SelectedText != null)
                 {
-                    if (richTxt.SelectedText != null)
-                    {
-                        richTxt.SelectionFont = fontDialog1.Font;
-                    }
-                    else
-                    {
-                            richTxt.Font = fontDialog1.Font;
-                        
-                    }
-            
+                    richTxt.SelectionFont = fontDialog1.Font;
                 }
-           
+                else
+                {
+                    richTxt.Font = fontDialog1.Font;
+
+                }
+            }
         }
 
 
@@ -249,18 +245,10 @@ namespace WindowsFormsApp1
                     richTxt.Find(txtBuscar.Text, indice, richTxt.TextLength, RichTextBoxFinds.None);
                     richTxt.SelectionBackColor = Color.Yellow;
                     indice = richTxt.Text.IndexOf(txtBuscar.Text, indice) + 1;
-                    contadorEncontrados++;
-
+                    buscado = true;
                 }
 
-                textoCambiado = 1;
 
-            if (contadorEncontrados == 0)
-            {
-                MessageBox.Show("No se han encontrado coincidencias");
-            }
-
-            contadorEncontrados = 0;
 
 
         }
@@ -344,16 +332,15 @@ namespace WindowsFormsApp1
 
         private void richTxt_Click(object sender, EventArgs e)
         {
-            if (textoCambiado == 1)
+            if (buscado)
             {
-
                 richTxt.Clear();
                 richTxt.Text = paraVolverAEmpezar;
-
-                richTxt.SelectionBackColor = richTxt.BackColor;
-
-                textoCambiado = 0;
+                richTxt.BackColor = Color.White;
+                buscado = false;
             }
+            
+
         }
     }
 }
